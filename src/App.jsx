@@ -13,7 +13,7 @@ export default function App() {
   const [showScroll, setShowScroll] = useState(false);
 
   // --- 🧸 სათამაშოების რაოდენობა ---
-  const toysCount = 62;
+  const toysCount = 76;
   const toys = Array.from({ length: toysCount }, (_, i) => ({
     id: i + 1,
     img: `/images/toys/toy-${i + 1}.jpg`
@@ -70,13 +70,13 @@ export default function App() {
       </nav>
 
       {/* --- ✨ HEADER --- */}
-      <header className="py-20 px-6 text-center reveal">
-        <h1 className="text-5xl md:text-7xl font-serif italic mb-5">
-          <span className="text-[#D4AF37]">MEDEA</span>
-          <span className="text-white ml-4">LATARIA</span>
+      <header className="py-16 md:py-20 px-6 text-center reveal">
+        <h1 className="text-3xl sm:text-5xl md:text-7xl font-serif italic mb-5 leading-tight">
+          <span className="text-[#D4AF37] block sm:inline">MEDEA</span>
+          <span className="text-white sm:ml-4 block sm:inline">LATARIA</span>
         </h1>
-        <div className="w-20 h-[1px] bg-[#D4AF37] mx-auto mb-6 opacity-50"></div> {/* ხაზიც ოქროსფერი */}
-        <p className="text-stone-500 text-xs uppercase tracking-[0.4em]">Handmade Wonders Collection</p>
+        <div className="w-20 h-[1px] bg-[#D4AF37] mx-auto mb-6 opacity-50"></div>
+        <p className="text-stone-500 text-[10px] sm:text-xs uppercase tracking-[0.4em]">Handmade Wonders Collection</p>
       </header>
 
       {/* --- 🧸 GRID --- */}
